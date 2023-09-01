@@ -59,6 +59,7 @@ function showModal({
 	cdp.textContent = price;
 	cdi.src =
 		window.location.origin +
+		// "https://carrentals.raphaelenciso.com/assets/images/cars/" +
 		"/assets/images/cars/" +
 		brand.toLowerCase() +
 		"-" +
@@ -69,5 +70,5 @@ function showModal({
 	cdma.textContent = machine;
 	cds.textContent = seats;
 	cdo.textContent = body;
-	cdbi.href = window.location.origin + "/car-rental/booking/";
+	cdbi.href = window.location.origin + "/car-rental/booking/" + id;
 }
