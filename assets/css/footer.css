@@ -1,0 +1,33 @@
+.footer {
+  padding: 20px;
+}
+
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer .wrapper .footer-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: 30px;
+}
+
+.footer .wrapper .footer-group h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer .wrapper .footer-group a {
+  text-decoration: none;
+  font-weight: 300;
+  color: var(--secondary-text);
+}
+
+@media (min-width: 720px) {
+  .footer .wrapper {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+  }
+}

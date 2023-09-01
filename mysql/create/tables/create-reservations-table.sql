@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS reservations(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    car_id INT NOT NULL,
+    start_date_time DATETIME NOT NULL,
+    end_date_time DATETIME NOT NULL,
+    delivery_location VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (car_id) REFERENCES cars(id)
+);
