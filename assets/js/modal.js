@@ -58,8 +58,8 @@ function showModal({
 	cdy.textContent = year;
 	cdp.textContent = price;
 	cdi.src =
-		"https://carrentals.raphaelenciso.com/assets/images/cars/" +
-		// "http://localhost/car-rental/assets/images/cars/" +
+		window.location.origin +
+		"/assets/images/cars/" +
 		brand.toLowerCase() +
 		"-" +
 		model.toLowerCase() +
@@ -69,6 +69,5 @@ function showModal({
 	cdma.textContent = machine;
 	cds.textContent = seats;
 	cdo.textContent = body;
-	cdbi.href = "https://carrentals.raphaelenciso.com/booking/" + id;
-	// "http://localhost/car-rental/booking/" + id;
+	cdbi.href = window.location.origin + "/car-rental/booking/";
 }
