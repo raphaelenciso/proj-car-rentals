@@ -70,5 +70,5 @@ function showModal({
 	cdma.textContent = machine;
 	cds.textContent = seats;
 	cdo.textContent = body;
-	cdbi.href = window.location.origin + "/car-rental/booking/" + id;
+	cdbi.href = window.location.origin + "/booking/" + id;
 }
