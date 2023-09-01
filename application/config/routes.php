@@ -51,8 +51,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 $route['default_controller'] = "pages/view";
 
-$route['booking/(:num)'] = "bookings/$1";
-$route['car-collection'] = "car_collections";
+$route['booking/(:num)'] = "bookings/index/$1";
+$route['car-collection'] = "car_collections/index";
 $route['(:any)'] = "pages/view/$1";
 
 $route['404_override'] = '';
