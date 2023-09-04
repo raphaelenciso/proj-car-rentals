@@ -9,6 +9,9 @@
           <li>
             <a href="<?php echo base_url() . '#contact-us' ?>">Contact Us</a>
           </li>
+          <li>
+            <a href="https://carrental-dashboard.raphaelenciso.com/" target="_blank">Dashboard</a>
+          </li>
 
           <?php if ($this->session->has_userdata('email')) { ?>
             <li><a href="<?php echo base_url() . 'users/logout' ?>">LOGOUT</a></li>
