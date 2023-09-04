@@ -59,7 +59,6 @@ function showModal({
 	cdp.textContent = price;
 	cdi.src =
 		window.location.origin +
-		// "https://carrentals.raphaelenciso.com/assets/images/cars/" +
 		"/assets/images/cars/" +
 		brand.toLowerCase() +
 		"-" +

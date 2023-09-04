@@ -23,6 +23,12 @@
 	gap: 10px;
 }
 
+.booking .wrapper .details .note {
+	color: red;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
 .booking .wrapper .details .terms {
 	display: flex;
 	gap: 10px;
@@ -77,7 +83,13 @@
 	font-size: 18px;
 }
 
-.booking .car-detail input {
+.booking .car-detail input:disabled,
+#total-price {
+	background-color: #bebbbb;
+}
+
+.booking .car-detail input,
+.booking .car-detail select {
 	background-color: #dedbdb;
 	border: 2px solid black;
 	border-radius: 5px;

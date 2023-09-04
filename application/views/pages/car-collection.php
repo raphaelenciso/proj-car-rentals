@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
+  <link rel="stylesheet" href="<?= base_url() . 'assets/css/toast.css' ?>" />
   <link rel="stylesheet" href="<?= base_url() . 'assets/css/hamburger.css' ?>" />
   <link rel="stylesheet" href="<?= base_url() . 'assets/css/universal.css' ?>" />
   <link rel="stylesheet" href="<?= base_url() . 'assets/css/navbar.css' ?>" />
@@ -27,12 +28,10 @@
   <div class="car-collection">
     <div class="container">
       <div class="wrapper">
-        <!-- TODO: MAKE IT FLOATING  -->
+
         <?php if (isset($message)) { ?>
-          <p class="message"> <?= $message; ?></p>
+          <p class="toast"> <?= $message; ?></p>
         <?php } ?>
-
-
 
         <div class="titles">
           <h1>Our Collection</h1>

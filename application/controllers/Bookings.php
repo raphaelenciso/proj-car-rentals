@@ -20,9 +20,9 @@ class Bookings extends CI_Controller {
     $formData = array(
       "user_id" => $this->session->userdata("id"),
       "car_id" => $this->input->post("car-id"),
-      "start_date_time" => $this->input->post("start-date"),
-      "end_date_time" => $this->input->post("end-date"),
-      "delivery_location" => $this->input->post("del-loc")
+      "pickup_date_time" => $this->input->post("pickup-start-date"),
+      "duration" => $this->input->post("duration"),
+      "total_price" => $this->input->post("total-price")
     );
 
     if ($this->session->userdata("email")) {

@@ -28,7 +28,7 @@ class Users_model extends CI_Model {
 
     $where_array =  array(
       'email' => $email,
-      'password' => $password,
+      // 'password' => password_hash($password, PASSWORD_BCRYPT),
     );
 
     $this->db->from('users');
@@ -36,8 +36,12 @@ class Users_model extends CI_Model {
     $query = $this->db->get();
 
     if ($query->num_rows() > 0) {
-      $valid = TRUE;
-      $error = "";
+      $user = $query->row();
+
+      if ($user && password_verify($password, $user->password)) {
+        $valid = TRUE;
+        $error = "";
+      }
     }
 
     $data["valid"] = $valid;

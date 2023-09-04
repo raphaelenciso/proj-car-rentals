@@ -50,23 +50,9 @@
         <button type="submit">Login</button>
         <a href="#">Forgot password ?</a>
 
-
-
         <?= form_close(); ?>
 
-        <div class="separator">Or</div>
-
-        <div class="icons">
-          <a href="">
-            <img src="<?php echo base_url() . 'assets/icons/google_icon.svg' ?>" alt="google_icon" />
-          </a>
-          <a href="">
-            <img src="<?php echo base_url() . 'assets/icons/fb_icon.svg" alt="fb_icon' ?>" />
-          </a>
-          <a href="">
-            <img src="<?php echo base_url() . 'assets/icons/github_icon.svg' ?>" alt="github_icon" />
-          </a>
-        </div>
+        <?php $this->load->view("components/auth_icons"); ?>
 
         <p class="signup-link">
           Don't you have an account ? <a href="<?php echo base_url() . "signup" ?>">Sign up</a>

@@ -38,7 +38,7 @@ class Users extends CI_Controller {
       "fullname" => $this->input->post('fullName'),
       "email" => $this->input->post('email'),
       "phone" => $this->input->post('phone'),
-      "password" => $this->input->post('password'),
+      "password" => password_hash($this->input->post('password'), PASSWORD_BCRYPT),
     );
 
 
@@ -46,12 +46,6 @@ class Users extends CI_Controller {
     $this->users_model->register($formData);
 
     redirect("login");
-    // $this->load->view("pages/login", $data);
-    // if ($data["valid"]) {
-    //   $this->load->view("pages/login", $data);
-    // } else {
-    //   $this->load->view("pages/signup", $data);
-    // }
   }
 
   public function login() {

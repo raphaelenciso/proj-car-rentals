@@ -17,6 +17,8 @@
 
   <script src="<?= base_url() . 'assets/js/navbar.js' ?>" defer></script>
   <script src="<?= base_url() . 'assets/js/modal.js' ?>" defer></script>
+  <script src="<?= base_url() . 'assets/js/script.js' ?>" defer></script>
+
 
   <!-- FONT AWESOME  -->
   <script src="https://kit.fontawesome.com/ce64f64b31.js" crossorigin="anonymous"></script>
@@ -50,7 +52,7 @@
             if ($key != 'id') { ?>
               <div class="car-detail">
                 <h3><?= strtoupper($key) ?></h3>
-                <p><?= $carDetails ?></p>
+                <p id="<?= 'detail-' . $key ?>"><?= $carDetails ?></p>
               </div>
           <?php }
           } ?>
@@ -60,27 +62,32 @@
       <hr />
       <div class="details">
         <h1 class="title">Booking Details</h1>
+        <p class="note">*Pick-up location is at Main Branch</p>
         <div class="car-details">
-
           <div class="car-detail">
-            <label>START DATE TIME</label>
-            <input type="datetime-local" name="start-date" id="" required />
+            <label>PICK-UP DATE TIME</label>
+            <input type="datetime-local" name="pickup-start-date" id="" required />
           </div>
           <div class="car-detail">
-            <label>END DATE TIME</label>
-            <input type="datetime-local" name="end-date" id="" required />
+            <label>DURATION (days)</label>
+            <select name="duration" id="durationInput" onchange="durationFunc()" required>
+              <option value="" selected disabled>-- select duration --</option>
+              <?php for ($i = 1; $i <= 7; $i++) { ?>
+                <option value="<?= $i ?>"><?= $i ?></option>
+              <?php } ?>
+            </select>
           </div>
           <div class="car-detail">
-            <label>DELIVERY LOCATION</label>
-            <input type="text" name="del-loc" id="" required />
+            <label>TOTAL PRICE</label>
+            <input type="number" name="total-price" id="total-price" readonly />
           </div>
         </div>
         <div class="terms">
-          <input type="checkbox" name="" id="" required />
-          <p>
+          <input type="checkbox" name="" id="checkbox" required />
+          <label for="checkbox">
             By clicking the submit button below,I hereby agree to and accept
             the following terms and conditions.
-          </p>
+          </label>
         </div>
         <button type="submit">RESERVE NOW</button>
       </div>
