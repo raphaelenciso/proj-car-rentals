@@ -1,71 +1,34 @@
-###################
-What is CodeIgniter
-###################
+# Car Rentals
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+![Car rentals Logo](https://raphaelenciso.com/_next/static/media/carrentals_thumbnail.70028c90.png)
 
-*******************
-Release Information
-*******************
+Discover convenience at its best with our Car Rentals website. Browse a wide range of vehicles, find the perfect one for your needs, and book effortlessly. Your next journey is just a click away!
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+## Features
 
-**************************
-Changelog and New Features
-**************************
+- **Wide Selection of Vehicles**: Explore a diverse range of vehicles including sedans, SUVs, trucks, and more to suit your travel needs.
+  
+- **Effortless Booking**: Enjoy a seamless booking process with our user-friendly interface, making it easy to reserve the vehicle of your choice.
+  
+- **Transparent Pricing**: Benefit from transparent pricing with no hidden fees, ensuring you know exactly what you're paying for.
+  
+- **Flexible Options**: Choose from various rental durations, pickup/drop-off locations, and additional services to customize your rental experience.
+  
+- **Secure Payment**: Book with confidence using our secure payment system, providing peace of mind for your transactions.
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+## Getting Started
 
-*******************
-Server Requirements
-*******************
+To start renting a car with us, simply visit our website at [carrentals.raphaelenciso.com](https://carrentals.raphaelenciso.com) and begin browsing our available vehicles. With just a few clicks, you can select your desired car, choose your rental dates, and complete your booking hassle-free.
 
-PHP version 5.6 or newer is recommended.
+## Support
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+For any inquiries or assistance, please contact our support team at [support@raphaelenciso.com](mailto:support@raphaelenciso.com). We're here to help you with any questions you may have regarding our services or your booking.
 
-************
-Installation
-************
+## Contributing
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+If you're interested in contributing to the improvement of our Car Rentals website, please reach out to us at [support@raphaelenciso.com](mailto:support@raphaelenciso.com). We welcome any suggestions or feedback to enhance the user experience for our customers.
 
-*******
-License
-*******
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+---
 
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Feel free to use and modify this README template for your project!
