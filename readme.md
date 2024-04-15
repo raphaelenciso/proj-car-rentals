@@ -18,7 +18,7 @@ Discover convenience at its best with our Car Rentals website. Browse a wide ran
 
 ## Getting Started
 
-To start renting a car with us, simply visit our website at [carrentals.raphaelenciso.com](https://carrentals.raphaelenciso.com) and begin browsing our available vehicles. With just a few clicks, you can select your desired car, choose your rental dates, and complete your booking hassle-free.
+To start renting a car with us, simply visit our website at [carrental.raphaelenciso.com](https://carrental.raphaelenciso.com) and begin browsing our available vehicles. With just a few clicks, you can select your desired car, choose your rental dates, and complete your booking hassle-free.
 
 ## Support
 
