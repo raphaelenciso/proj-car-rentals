@@ -30,5 +30,3 @@ If you're interested in contributing to the improvement of our Car Rentals websi
 
 
 ---
-
-Feel free to use and modify this README template for your project!
